@@ -315,7 +315,7 @@ public class GLKKeyboardView extends View implements View.OnClickListener {
         mHintPaint.setTextSize(mHintTextSize);
         mHintPaint.setTextAlign(Paint.Align.CENTER);
         mHintPaint.setAlpha(255);
-        mHintPaint.setColor(Color.rgb(150, 150, 150));
+        mHintPaint.setColor(Color.BLACK); // e-ink: grey hints are too faint
         mHintPaint.setTypeface(Typeface.DEFAULT);
     }
 

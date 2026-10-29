@@ -286,7 +286,7 @@ public class GLKFileDialog extends DialogFragment {
                                 // do nothing
                             }
                         });
-                        builder.setIcon(android.R.drawable.ic_dialog_alert);
+                        builder.setIcon(R.drawable.ic_warning_black_24dp);
                         builder.show();
                     } else {
                         if (mListener != null) {

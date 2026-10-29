@@ -645,7 +645,7 @@ public class FileSelectorFragment extends Fragment
                         // do nothing
                     }
                 });
-                builder.setIcon(android.R.drawable.ic_dialog_alert);
+                builder.setIcon(R.drawable.ic_warning_black_24dp);
                 builder.show();
                 return true;
             }
@@ -1083,7 +1083,7 @@ public class FileSelectorFragment extends Fragment
                         // Wise move!
                     }
                 });
-                builder.setIcon(android.R.drawable.ic_dialog_alert);
+                builder.setIcon(R.drawable.ic_warning_black_24dp);
                 builder.show();
             } else {
                 // Ok, this is manageable, cool bananas

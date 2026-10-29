@@ -99,7 +99,7 @@
             app:codes="8593"
             app:isRepeatable="true"
             app:keyEdgeFlags="left"
-            app:keyIcon="@drawable/ic_keyboard_arrow_up_white_24dp"
+            app:keyIcon="@drawable/ic_keyboard_arrow_up_black_24dp"
             app:keyWidth="11%p" />
         <Key
             app:codes="122"
@@ -137,7 +137,7 @@
             app:codes="8595"
             app:isRepeatable="true"
             app:keyEdgeFlags="left"
-            app:keyIcon="@drawable/ic_keyboard_arrow_down_white_24dp"
+            app:keyIcon="@drawable/ic_keyboard_arrow_down_black_24dp"
             app:keyWidth="11%p" />
         <Key
             app:codes="0xffffffdf"
@@ -155,12 +155,12 @@
         <Key
             app:codes="8592"
             app:isRepeatable="true"
-            app:keyIcon="@drawable/ic_keyboard_arrow_left_white_24dp"
+            app:keyIcon="@drawable/ic_keyboard_arrow_left_black_24dp"
             app:keyWidth="11%p" />
         <Key
             app:codes="8594"
             app:isRepeatable="true"
-            app:keyIcon="@drawable/ic_keyboard_arrow_right_white_24dp"
+            app:keyIcon="@drawable/ic_keyboard_arrow_right_black_24dp"
             app:keyWidth="11%p" />
         <Key
             app:codes="10"

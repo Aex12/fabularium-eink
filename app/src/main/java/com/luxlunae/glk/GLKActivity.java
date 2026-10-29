@@ -806,7 +806,7 @@ public class GLKActivity extends FragmentActivity
     @Override
     public void onBackPressed() {
         new AlertDialog.Builder(this)
-                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setIcon(R.drawable.ic_warning_black_24dp)
                 .setTitle(R.string.glk_force_quit_title)
                 .setMessage(R.string.glk_force_quit_message)
                 .setPositiveButton(R.string.dialog_yes, new DialogInterface.OnClickListener() {

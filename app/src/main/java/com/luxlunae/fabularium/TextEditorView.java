@@ -61,7 +61,7 @@ public class TextEditorView extends ScrollView {
         inflater.inflate(R.layout.text_editor, this);
         mEditText = findViewById(R.id.textEditor);
         mLineNumPaint.set(mEditText.getPaint());
-        mLineNumPaint.setColor(Color.LTGRAY);
+        mLineNumPaint.setColor(Color.DKGRAY);
         mLineNumPaint.setTextSize(spToPx(14f, getContext()));
     }
 
@@ -106,7 +106,7 @@ public class TextEditorView extends ScrollView {
                                 mEditText.setText(text);
                             }
                         })
-                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setIcon(R.drawable.ic_warning_black_24dp)
                         .show();
 
             } else {

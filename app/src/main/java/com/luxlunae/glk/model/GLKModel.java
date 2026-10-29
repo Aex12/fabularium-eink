@@ -675,9 +675,9 @@ public class GLKModel extends AndroidViewModel {
         mBorderHeightPX = verifyInt(sharedPref.getString(PreferencesActivity.KEY_PREF_BORDER_HEIGHT, "1"),
                 1, "border height", 0, 20);
         try {
-            mBorderColor = Color.parseColor(sharedPref.getString(PreferencesActivity.KEY_PREF_BORDER_COLOR, "darkgrey"));
+            mBorderColor = Color.parseColor(sharedPref.getString(PreferencesActivity.KEY_PREF_BORDER_COLOR, "black"));
         } catch (IllegalArgumentException e) {
-            mBorderColor = Color.DKGRAY;
+            mBorderColor = Color.BLACK;
         }
         mBorderWidthPX = GLKUtils.dpToPx(mBorderWidthPX, dm);
         mBorderHeightPX = GLKUtils.dpToPx(mBorderHeightPX, dm);

@@ -132,7 +132,7 @@
                 android:summary="Choose whether you want to show borders between windows or not."
                 android:title="Borders" />
             <EditTextPreference
-                android:defaultValue="darkgrey"
+                android:defaultValue="black"
                 android:key="pref_borderColor"
                 android:summary="Specify the color (#RRGGBB or a recognised color name, e.g. red) for GLK window borders."
                 android:title="Border color" />

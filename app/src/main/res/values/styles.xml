@@ -19,12 +19,84 @@
   -->
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Base application theme. -->
-    <style name="Theme.Fabularium" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/primary_material_dark_1</item>
-        <item name="android:colorBackground" tools:ignore="PrivateResource">
-            @color/background_material_dark
-        </item>
+    <!-- Base application theme: high-contrast light theme for e-ink displays.
+         Pure black ink on pure white paper, no animations, no elevation shadows. -->
+    <style name="Theme.Fabularium" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/eink_paper</item>
+        <item name="colorPrimaryDark">@color/eink_paper</item>
+        <item name="colorAccent">@color/eink_ink</item>
+        <item name="colorControlNormal">@color/eink_ink</item>
+        <item name="colorControlActivated">@color/eink_ink</item>
+        <item name="colorControlHighlight">@color/eink_pressed</item>
+        <item name="colorButtonNormal">@color/eink_paper</item>
+        <item name="android:colorBackground">@color/eink_paper</item>
+        <item name="android:windowBackground">@color/eink_paper</item>
+        <item name="android:textColorPrimary">@color/eink_ink</item>
+        <item name="android:textColorSecondary">@color/eink_ink_secondary</item>
+        <item name="android:textColorTertiary">@color/eink_ink_secondary</item>
+        <item name="android:textColorHint">@color/eink_ink_secondary</item>
+        <item name="android:textColor">@color/eink_ink</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/eink_paper</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/eink_paper</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <!-- Animations cause ghosting and slow partial refreshes on e-ink. -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="alertDialogTheme">@style/Theme.Fabularium.Dialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.Fabularium.Dialog</item>
+        <item name="tabStyle">@style/Widget.Fabularium.TabLayout</item>
+        <item name="android:listDivider">@drawable/list_divider</item>
+        <item name="popupMenuStyle">@style/Widget.Fabularium.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.Fabularium.PopupMenu.Overflow</item>
+        <item name="listPopupWindowStyle">@style/Widget.Fabularium.ListPopupWindow</item>
+        <item name="android:popupMenuStyle">@style/Widget.Fabularium.PopupMenu</item>
+        <item name="android:listPopupWindowStyle">@style/Widget.Fabularium.ListPopupWindow</item>
+    </style>
+
+    <style name="Theme.Fabularium.Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/eink_ink</item>
+        <item name="colorControlNormal">@color/eink_ink</item>
+        <item name="colorControlActivated">@color/eink_ink</item>
+        <item name="colorControlHighlight">@color/eink_pressed</item>
+        <item name="android:textColorPrimary">@color/eink_ink</item>
+        <item name="android:textColorSecondary">@color/eink_ink_secondary</item>
+        <item name="android:textColor">@color/eink_ink</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <!-- Border instead of shadow; no grey dim behind the dialog. -->
+        <item name="android:windowBackground">@drawable/eink_dialog_background</item>
+        <item name="android:windowElevation" tools:targetApi="lollipop">0dp</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Widget.Fabularium.PopupMenu" parent="Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/eink_popup_background</item>
+        <item name="android:popupElevation" tools:targetApi="lollipop">0dp</item>
+    </style>
+
+    <style name="Widget.Fabularium.PopupMenu.Overflow" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="android:popupBackground">@drawable/eink_popup_background</item>
+        <item name="android:popupElevation" tools:targetApi="lollipop">0dp</item>
+    </style>
+
+    <style name="Widget.Fabularium.ListPopupWindow" parent="Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/eink_popup_background</item>
+        <item name="android:popupElevation" tools:targetApi="lollipop">0dp</item>
+    </style>
+
+    <!-- Toolbar overlay: dark ink on the white toolbar. -->
+    <style name="ThemeOverlay.Fabularium.Toolbar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/eink_ink</item>
+        <item name="android:textColorSecondary">@color/eink_ink</item>
+        <item name="colorControlNormal">@color/eink_ink</item>
+        <item name="colorControlHighlight">@color/eink_pressed</item>
+    </style>
+
+    <style name="Widget.Fabularium.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextColor">@color/eink_ink_secondary</item>
+        <item name="tabSelectedTextColor">@color/eink_ink</item>
+        <item name="tabIndicatorColor">@color/eink_ink</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabRippleColor">@null</item>
     </style>
 
     <style name="Theme.Fabularium.Translucent" parent="Theme.Fabularium">

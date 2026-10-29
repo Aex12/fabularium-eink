@@ -33,10 +33,10 @@
         android:id="@+id/glk_keyboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FF000000"
+        android:background="@color/eink_paper"
         android:paddingTop="2dp"
         app:keyBackground="@drawable/key_selector"
-        app:keyTextColor="@color/white"
+        app:keyTextColor="@color/eink_ink"
         app:keyTextSize="18sp"
         app:labelTextSize="14sp" />
 </LinearLayout>

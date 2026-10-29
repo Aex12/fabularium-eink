@@ -73,9 +73,9 @@ public class FileListAdapter extends BaseAdapter implements OnCheckedChangeListe
 
         // Load the icons we'll use
         Resources r = context.getResources();
-        mFolderDrawable = ResourcesCompat.getDrawable(r, R.drawable.ic_folder_white_24dp, null);
-        mFileDrawable = ResourcesCompat.getDrawable(r, R.drawable.ic_insert_drive_file_white_24dp, null);
-        mZippedDrawable = ResourcesCompat.getDrawable(r, R.drawable.ic_zipped_white_24dp, null);
+        mFolderDrawable = ResourcesCompat.getDrawable(r, R.drawable.ic_folder_black_24dp, null);
+        mFileDrawable = ResourcesCompat.getDrawable(r, R.drawable.ic_insert_drive_file_black_24dp, null);
+        mZippedDrawable = ResourcesCompat.getDrawable(r, R.drawable.ic_zipped_black_24dp, null);
     }
 
     public void setAll(boolean checked) {

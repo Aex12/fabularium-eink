@@ -363,7 +363,7 @@ public class GameSelectorFragment extends Fragment
                         // do nothing
                     }
                 });
-                builder.setIcon(android.R.drawable.ic_dialog_alert);
+                builder.setIcon(R.drawable.ic_warning_black_24dp);
                 builder.show();
                 return true;
             }
@@ -395,7 +395,7 @@ public class GameSelectorFragment extends Fragment
                         // do nothing
                     }
                 });
-                builder.setIcon(android.R.drawable.ic_dialog_alert);
+                builder.setIcon(R.drawable.ic_warning_black_24dp);
                 builder.show();
                 return true;
             }
@@ -567,7 +567,7 @@ public class GameSelectorFragment extends Fragment
                         // do nothing
                     }
                 });
-                builder.setIcon(android.R.drawable.ic_dialog_alert);
+                builder.setIcon(R.drawable.ic_warning_black_24dp);
                 builder.show();
                 return true;
             }

@@ -34,10 +34,10 @@ import java.io.IOException;
 
 public final class GLKConstants {
 
-    public static final int GLK_DEFAULT_TEXT_COLOUR = Color.parseColor("#212121");
+    public static final int GLK_DEFAULT_TEXT_COLOUR = Color.parseColor("#000000");
     public static final int GLK_DEFAULT_BACK_COLOUR = Color.parseColor("#FFFFFF");
-    public static final int GLK_DEFAULT_INPUT_COLOUR = Color.parseColor("#0277bd");
-    public static final int EMPTY_SCREEN_COLOR = Color.BLACK;
+    public static final int GLK_DEFAULT_INPUT_COLOUR = Color.parseColor("#000000");
+    public static final int EMPTY_SCREEN_COLOR = Color.WHITE;
 
     public static final String GLK_SAVE_EXT = ".glksave";
     public static final String GLK_DATA_EXT = ".glkdata";

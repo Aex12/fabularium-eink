@@ -18,14 +18,21 @@
   ~ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
   -->
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <color name="primary_material_dark_1">#21222c</color>
-    <color name="gold">#ffd700</color>
+    <!-- E-ink palette: pure black on pure white. Avoid mid-greys and hues; on
+         e-paper they render as low-contrast dithered grey. -->
+    <color name="eink_paper">#FFFFFF</color>
+    <color name="eink_ink">#000000</color>
+    <color name="eink_ink_secondary">#222222</color>
+    <color name="eink_pressed">#BBBBBB</color>
+
+    <color name="primary_material_dark_1">@color/eink_paper</color>
+    <color name="gold">@color/eink_ink</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="accent_material_dark" tools:ignore="PrivateResource">#aea64b</color>
-    <color name="background_material_dark" tools:ignore="PrivateResource">#363846</color>
-    <color name="light_font">#FBFBFB</color>
-    <color name="grey_font">#ff9e9e9e</color>
-    <color name="text_shadow">#7F000000</color>
-    <color name="list_divider">#8F8F8F</color>
+    <color name="accent_material_dark" tools:ignore="PrivateResource">@color/eink_ink</color>
+    <color name="background_material_dark" tools:ignore="PrivateResource">@color/eink_paper</color>
+    <color name="light_font">@color/eink_ink</color>
+    <color name="grey_font">@color/eink_ink_secondary</color>
+    <color name="text_shadow">#00000000</color>
+    <color name="list_divider">@color/eink_ink</color>
 </resources>

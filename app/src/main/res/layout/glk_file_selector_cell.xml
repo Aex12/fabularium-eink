@@ -67,7 +67,7 @@
         android:contentDescription="@string/renameGlkFile"
         android:padding="5sp"
         android:focusable="false"
-        android:src="@drawable/ic_mode_edit_white_24dp" />
+        android:src="@drawable/ic_mode_edit_black_24dp" />
 
     <ImageButton
         android:id="@+id/GlkFileDelete"
@@ -79,6 +79,6 @@
         android:focusable="false"
         android:paddingLeft="5sp"
         android:paddingStart="5sp"
-        android:src="@drawable/ic_delete_white_24dp" />
+        android:src="@drawable/ic_delete_black_24dp" />
 
 </LinearLayout>

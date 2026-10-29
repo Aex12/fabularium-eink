@@ -22,20 +22,20 @@
 
     <item
         android:id="@+id/action_save_textfile"
-        android:icon="@drawable/ic_save_white_24dp"
+        android:icon="@drawable/ic_save_black_24dp"
         android:title="@string/menu_save_text_file"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_compile_textfile"
-        android:icon="@drawable/ic_build_white_24dp"
+        android:icon="@drawable/ic_build_black_24dp"
         android:title="@string/menu_compile"
         app:showAsAction="ifRoom" />
 
     <!-- Settings, should always be in the overflow -->
     <item
         android:id="@+id/action_run_project"
-        android:icon="@drawable/ic_play_circle_outline_white_24dp"
+        android:icon="@drawable/ic_play_circle_outline_black_24dp"
         android:title="@string/menu_run_project"
         app:showAsAction="ifRoom" />
 

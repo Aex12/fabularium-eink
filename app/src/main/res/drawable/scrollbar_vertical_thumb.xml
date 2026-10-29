@@ -20,8 +20,8 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <gradient
         android:angle="0"
-        android:endColor="#0277bd"
-        android:startColor="#0277bd" />
+        android:endColor="#000000"
+        android:startColor="#000000" />
     <corners android:radius="2dp" />
     <size android:width="4dp" />
 </shape>

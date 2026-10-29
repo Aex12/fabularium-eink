@@ -73,7 +73,7 @@ public class UrlDialogFragment extends DialogFragment {
         view.loadUrl(mUrl);
 
         // N.B. For now we do not set the dialog title for cosmetic reasons
-        return new AlertDialog.Builder(getActivity(), R.style.Theme_AppCompat_Light_Dialog_Alert)
+        return new AlertDialog.Builder(getActivity(), R.style.Theme_Fabularium_Dialog)
                 .setView(view)
                 .setPositiveButton(android.R.string.ok, null)
                 .create();
