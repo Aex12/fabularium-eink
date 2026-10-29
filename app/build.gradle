@@ -1,27 +1,36 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 33
+    buildToolsVersion '33.0.2'
+    ndkVersion '25.2.9519653'
 
     defaultConfig {
         applicationId 'io.davidar.fabularium'
-        minSdkVersion 16
+        minSdkVersion 19
+        // Keep targetSdk 28: it gives legacy (non-scoped) external storage access on
+        // Android 10/11, which the game library and file browser rely on.
         targetSdkVersion 28
     }
 
     buildTypes {
         release {
-            shrinkResources true
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // No ProGuard rules exist for the JNI callbacks, so shrinking is unsafe.
+            minifyEnabled false
+            // Sideload builds are signed with the local debug key.
+            signingConfig signingConfigs.debug
         }
     }
 
     externalNativeBuild {
         cmake {
             path 'src/main/jni/CMakeLists.txt'
+            version '3.22.1'
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }
 

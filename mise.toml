@@ -1,0 +1,12 @@
+[tools]
+java = "temurin-17.0.21+9"
+android-sdk = "19.0"
+
+[env]
+ANDROID_HOME = "{{env.HOME}}/.local/share/android-sdk"
+ANDROID_SDK_ROOT = "{{env.HOME}}/.local/share/android-sdk"
+_.path = [
+  "{{env.HOME}}/.local/share/android-sdk/cmdline-tools/latest/bin",
+  "{{env.HOME}}/.local/share/android-sdk/platform-tools",
+  "{{env.HOME}}/.local/share/android-sdk/emulator",
+]

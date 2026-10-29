@@ -22,6 +22,10 @@
 # This ensures that a certain set of CMake features is available to your build.
 cmake_minimum_required(VERSION 3.4.1)
 
+# Clang >= 11 defaults to -fno-common; several terps (e.g. alan2) define globals
+# in headers and rely on the old common-symbol behaviour.
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fcommon")
+
 function(addprefix var prefix)
    set(listVar "")
    foreach(f ${ARGN})
