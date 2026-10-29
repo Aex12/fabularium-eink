@@ -1,4 +1,11 @@
-# Fabularium
+# Fabularium (e-ink fork)
+
+This fork targets **e-ink Android tablets**. It uses a high-contrast black-on-white theme throughout (library, file browser, editor, dialogs, built-in keyboard, in-game defaults), with no animations or shadows, and an updated build toolchain (AGP 7.4, Gradle 7.6, JDK 17, NDK r25). See [AGENTS.md](AGENTS.md) for build, test and theming notes.
+
+If you already had Fabularium installed, use *Reset config files* from the game library's overflow menu to pick up the e-ink in-game colour defaults.
+
+---
+
 
 This is the source code for the Fabularium app at https://play.google.com/store/apps/details?id=com.luxlunae.fabularium.
 
